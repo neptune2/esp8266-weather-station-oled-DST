@@ -403,8 +403,7 @@ void drawDateTime(OLEDDisplay *display, OLEDDisplayUiState* state, int16_t x, in
   display->setTextAlignment(TEXT_ALIGN_RIGHT);
   
 #ifdef STYLE_24HR
-  // sprintf(time_str, "%02d:%02d:%02d\n",timeinfo->tm_hour, timeinfo->tm_min, timeinfo->tm_sec);
-  sprintf(time_str, "23:%02d:%02d\n",timeinfo->tm_hour, timeinfo->tm_min, timeinfo->tm_sec);
+  sprintf(time_str, "%02d:%02d:%02d\n",timeinfo->tm_hour, timeinfo->tm_min, timeinfo->tm_sec);
   display->drawString(108 + x, 19 + y, time_str);
 #else
   int hour = (timeinfo->tm_hour+11)%12+1;  // take care of noon and midnight
