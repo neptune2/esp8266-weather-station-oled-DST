@@ -40,12 +40,12 @@ Uses SSD1306 128x64 OLED display with with either SPI or I2C interface
 
 This code is made for an 128x64 SSD1603 OLED display with code running on an ESP8266.
 Either the SPI or I2C version can be used.
-You can buy the original Squix78 Weatherstaion Kit here: 
-[https://shop.squix.ch/index.php/esp8266.html](https://shop.squix.ch/index.php/esp8266.html)
+You can buy the original Squix78 Weather Station Kit here: 
+[Squix Shop](https://shop.squix.ch/index.php/esp8266.html) or here: [US Amazon store](https://www.amazon.com/gp/product/B01KE7BA3O)
 
 ## Software Requirements/ Libraries
 
-* Arduino IDE with ESP8266 platform installed
+* [Arduino IDE with ESP8266 platform installed](https://github.com/esp8266/Arduino)
 * [Weather Station Library](https://github.com/squix78/esp8266-weather-station) or through Library Manager
 * [ESP8266 OLED SSD1306 Library](https://github.com/squix78/esp8266-oled-ssd1306)
 * [WifiManager Library](https://github.com/tzapu/WiFiManager)
