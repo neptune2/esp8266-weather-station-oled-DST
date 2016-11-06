@@ -3,15 +3,15 @@
 Daylight Saving Time and other customizations of Squix78 ESP8266 OLED Weather Station.
 Uses SSD1306 128x64 OLED display with with either SPI or I2C interface
 
-[cover](https://github.com/neptune2/esp8266-weather-station-oled-DST/raw/master/resources/cover.jpg)
+![cover](https://github.com/neptune2/esp8266-weather-station-oled-DST/raw/master/resources/splash.jpg)
 
 | Zurich Standard Time | Boston Daylight Saving Time |
 |:--------------------:|:---------------------------:|
 | ![Zurich CET](https://github.com/neptune2/esp8266-weather-station-oled-DST/raw/master/resources/Zurich_CET.jpg) | ![Boston EDT](https://github.com/neptune2/esp8266-weather-station-oled-DST/raw/master/resources/Boston_EDT.jpg) |
 
-| Splash Screen | DHT22 Update | Conditions Screen |
-|:-------------:|:------------:|:-----------------:|
-| ![Splash Screen](https://github.com/neptune2/esp8266-weather-station-oled-DST/raw/master/resources/splash.jpg) | ![DHT22 Update](https://github.com/neptune2/esp8266-weather-station-oled-DST/raw/master/resources/DHT22_update.jpg) | ![Conditions](https://github.com/neptune2/esp8266-weather-station-oled-DST/raw/master/resources/conditions.jpg) |
+| DHT22 Update | Conditions Screen |
+|:------------:|:-----------------:|
+| ![DHT22 Update](https://github.com/neptune2/esp8266-weather-station-oled-DST/raw/master/resources/DHT22_update.jpg) | ![Conditions](https://github.com/neptune2/esp8266-weather-station-oled-DST/raw/master/resources/conditions.jpg) |
 
 | DHT Sensor | Thingspeak Sensor |
 |:----------:|:-----------------:|
@@ -62,7 +62,7 @@ You can buy the original Squix78 Weatherstaion Kit here:
 You also need to get an API key for the Wunderground data: https://www.wunderground.com/
 
 ## Wemos D1R2 Wiring
-![Wemos](https://github.com/neptune2/esp8266-weather-station-oled-DST/raw/master/resources/wemos_oled_weatherstation.jpg)
+![Wemos D1R2 and DHT22 sensor](https://github.com/neptune2/esp8266-weather-station-oled-DST/raw/master/resources/cover.jpg)
 
 See code for pin configurations
 
