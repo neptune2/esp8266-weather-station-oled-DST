@@ -36,10 +36,10 @@ You can buy the original Squix78 Weatherstaion Kit here:
 * Arduino IDE with ESP8266 platform installed
 * [Weather Station Library](https://github.com/squix78/esp8266-weather-station) or through Library Manager
 * [ESP8266 OLED SSD1306 Library](https://github.com/squix78/esp8266-oled-ssd1306)
-* [WifiManager](https://github.com/tzapu/WiFiManager)
+* [WifiManager Library](https://github.com/tzapu/WiFiManager)
 
 ### Additional required library for automatic Daylight Saving Time adjust
-* [simpleDSTadjust](https://github.com/neptune2/simpleDSTadjust)
+* [simpleDSTadjust Library](https://github.com/neptune2/simpleDSTadjust)
 
 You also need to get an API key for the Wunderground data: https://www.wunderground.com/
 
