@@ -22,15 +22,15 @@ Uses SSD1306 128x64 OLED display with with either SPI or I2C interface
 *  Replaced TimeClient with built-in lwip sntp client (no need for external ntp client library)
 *  Added Daylight Saving Time Auto adjuster with DST rules using simpleDSTadjust library
  * https://github.com/neptune2/simpleDSTadjust
-*  Added Setting examples for Boston, Zurich and Sydney
+*  Added Locale Setting examples for Boston, Zurich and Sydney
  * Selectable NTP servers for each locale
  * DST rules and timezone settings customizable for each locale
   * See https://www.timeanddate.com/time/change/ for DST rules
  * Added AM/PM or 24-hour option for each locale
-*  Changed to 7-segment Clock font from http://www.keshikan.net/fonts-e.html
+*  Changed Clock screen to 7-segment font from http://www.keshikan.net/fonts-e.html
 *  Added Forecast screen for days 4-6
- *   >>> Need to change WundergroundClient.h in ESP8266_Weather_Station library
- *    #define MAX_FORECAST_PERIODS 12  // Was 7
+ * **>>> Need to change WundergroundClient.h in ESP8266_Weather_Station library**
+ * `#define MAX_FORECAST_PERIODS 12  // Was 7`
 *  Added support for DHT22 Indoor Temperature and Humidity
 *  Fixed bug preventing display.flipScreenVertically() from working
 * Slight adjustment to overlay
