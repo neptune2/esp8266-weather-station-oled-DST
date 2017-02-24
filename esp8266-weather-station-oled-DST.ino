@@ -25,6 +25,10 @@ See more at http://blog.squix.ch
 
 /* Customizations by Neptune (NeptuneEng on Twitter, Neptune2 on Github)
  *  
+ * Version 1.0.0 - Bugfix
+ *	- Fixed ticker overwrite bug: Split DHT and Wunderground timed updates out to 2 tickers. Thanks @charonofssi
+ *
+ * Version 0.1.0 - Initial Released Version
  *  Added Wifi Splash screen and credit to Squix78
  *  Modified progress bar to a thicker and symmetrical shape
  *  Replaced TimeClient with built-in lwip sntp client (no need for external ntp client library)
@@ -78,7 +82,7 @@ See more at http://blog.squix.ch
 #define HOSTNAME "ESP8266-OTA-"
 
 // Setup
-const int UPDATE_INTERVAL_SECS = 10 * 60; // Update every 10 minutes
+const int UPDATE_INTERVAL_SECS = 30 + (10 * 60); // Update every 10.5 minutes
 
 // Display Settings
 // Pin definitions for SPI OLED
@@ -196,7 +200,7 @@ bool readyForDHTUpdate = false;
 
 String lastUpdate = "--";
 
-Ticker ticker;
+Ticker ticker1, ticker2;
 
 //declaring prototypes
 void configModeCallback (WiFiManager *myWiFiManager);
@@ -305,8 +309,8 @@ void setup() {
 
   updateData(&display);
 
-  ticker.attach(UPDATE_INTERVAL_SECS, setReadyForWeatherUpdate);
-  ticker.attach(60, setReadyForDHTUpdate);
+  ticker1.attach(UPDATE_INTERVAL_SECS, setReadyForWeatherUpdate);
+  ticker2.attach(60, setReadyForDHTUpdate);
 }
 
 void loop() {

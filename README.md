@@ -35,6 +35,9 @@ Uses SSD1306 128x64 OLED display with with either SPI or I2C interface
 *  Fixed bug preventing display.flipScreenVertically() from working
 * Slight adjustment to overlay
 
+## Bug Fixes include:
+
+* Fixed ticker overwrite bug: Split DHT and Wunderground timed updates out to 2 tickers. Thanks @charonofssi
 
 ## Hardware Requirements
 
