@@ -85,6 +85,13 @@ See more at http://blog.squix.ch
 const int UPDATE_INTERVAL_SECS = 30 + (10 * 60); // Update every 10.5 minutes
 
 // Display Settings
+// Pin definitions for I2C OLED
+const int I2C_DISPLAY_ADDRESS = 0x3c;
+// const int SDA_PIN = 0;
+// const int SDC_PIN = 2;
+const int SDA_PIN = D2;
+const int SDC_PIN = D4;
+
 // Pin definitions for SPI OLED
 #define OLED_CS     D8  // Chip select
 #define OLED_DC     D2  // Data/Command
