@@ -24,7 +24,10 @@ See more at http://blog.squix.ch
 */
 
 /* Customizations by Neptune (NeptuneEng on Twitter, Neptune2 on Github)
- *  
+ *
+ * Version 1.0.1 - Bugfix
+ *  - Added Missing I2C variables
+ *
  * Version 1.0.0 - Bugfix
  *	- Fixed ticker overwrite bug: Split DHT and Wunderground timed updates out to 2 tickers. Thanks @charonofssi
  *
