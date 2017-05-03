@@ -52,6 +52,7 @@ You can buy the original Squix78 Weather Station Kit here:
 * [Weather Station Library](https://github.com/squix78/esp8266-weather-station) or through Library Manager
 * [ESP8266 OLED SSD1306 Library](https://github.com/squix78/esp8266-oled-ssd1306)
 * [WifiManager Library](https://github.com/tzapu/WiFiManager)
+* [DHT Sensor Library](https://github.com/adafruit/DHT-sensor-library)
 
 ### Additional required library for automatic Daylight Saving Time adjust
 * [simpleDSTadjust Library](https://github.com/neptune2/simpleDSTadjust)
